@@ -349,6 +349,9 @@
   .h-auto {
     height: auto;
   }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
   .w-auto {
     width: auto;
   }
@@ -699,6 +702,11 @@
       grid-column: span 7 / span 7;
     }
   }
+  .md\:mx-30 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 30);
+    }
+  }
   .md\:ms-0 {
     @media (width >= 48rem) {
       margin-inline-start: calc(var(--spacing) * 0);
@@ -750,6 +758,11 @@
   .md\:w-50 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
     }
   }
   .md\:flex-1 {
