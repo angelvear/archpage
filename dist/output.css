@@ -26,6 +26,11 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-zinc-100: oklch(96.7% 0.001 286.375);
+    --color-zinc-200: oklch(92% 0.004 286.32);
+    --color-zinc-300: oklch(87.1% 0.006 286.286);
+    --color-zinc-400: oklch(70.5% 0.015 286.067);
+    --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-700: oklch(37% 0.013 285.805);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
@@ -457,6 +462,24 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-zinc-100 {
+    background-color: var(--color-zinc-100);
+  }
+  .bg-zinc-200 {
+    background-color: var(--color-zinc-200);
+  }
+  .bg-zinc-300 {
+    background-color: var(--color-zinc-300);
+  }
+  .bg-zinc-400 {
+    background-color: var(--color-zinc-400);
+  }
+  .bg-zinc-500 {
+    background-color: var(--color-zinc-500);
+  }
+  .bg-zinc-600 {
+    background-color: var(--color-zinc-600);
+  }
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -549,6 +572,9 @@
   .text-gray-400 {
     color: var(--color-gray-400);
   }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -572,6 +598,12 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-zinc-300 {
+    color: var(--color-zinc-300);
+  }
+  .text-zinc-700 {
+    color: var(--color-zinc-700);
   }
   .uppercase {
     text-transform: uppercase;
@@ -631,6 +663,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-slate-900);
+      }
+    }
+  }
+  .hover\:bg-zinc-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-zinc-500);
       }
     }
   }
@@ -883,6 +922,11 @@
       background-color: var(--color-slate-800);
     }
   }
+  .dark\:bg-slate-900 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-slate-900);
+    }
+  }
   .dark\:bg-stone-600 {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-stone-600);
@@ -967,6 +1011,15 @@
       --tw-shadow-color: oklch(44.2% 0.017 285.786);
       @supports (color: color-mix(in lab, red, red)) {
         --tw-shadow-color: color-mix(in oklab, var(--color-zinc-600) var(--tw-shadow-alpha), transparent);
+      }
+    }
+  }
+  .dark\:hover\:bg-slate-700 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-slate-700);
+        }
       }
     }
   }
