@@ -14,10 +14,10 @@
 <body class="m-0 p-0">
     <main class="bg-[#efede6] dark:bg-gray-800 relative">
     <hero class="w-full h-screen"> 
-    <div class="w-screen aspect-auto py-90 contrast-55" style="background-image: url('img/hero-architecture.jpg'); background-size: cover;">
+    <div class="w-fit md:w-screen aspect-auto py-105 contrast-55 object-cover" style="background-image: url('img/hero-architecture.jpg');">
         <div class="flex flex-col">
-        <h1 class="px-50 text-black text-7xl">Estudio</h1>
-        <p class="px-50 text-gray-400 italic text-3xl">Arquitectura y diseño</p>
+        <h1 class="px-20 md:px-50 text-black text-7xl">Estudio</h1>
+        <p class="px-20 md:px-50 text-gray-400 italic text-3xl">Arquitectura y diseño</p>
         </div>
     
     </div>
@@ -25,23 +25,46 @@
 
     <div class="container">
         <div class="flex flex-col absolute top-0 w-full">
-        <nav class="flex flex-row justify-center gap-50 px-50 py-15">
+        <nav class="flex flex-row justify-center gap-10 md:gap-50 px-50 py-15">
             <a href="#" class="text-xl text-white hover:underline">Home</a>
             <a href="#" class="text-xl text-white hover:underline">Projects</a>
             <a href="#" class="text-xl text-white hover:underline">About</a>
             <a href="#" class="text-xl text-white hover:underline">Contact</a>
+        </nav>
         </div>
     </div>
 
-    <div class="px-20 py-40">
-        <div class="flex flex-col">
-            <h2 class="text-2xl font-light text-gray-600">Proyectos</h2>
-            <p class="text-gray-600 text-4xl">Espacios que </br>hemos construido</p>
-        </div>
-        <div class="flex flex-col md:flex-row py-20">
-            <div class="size-100 md:size-200" style="background-image: url('img/project-villa.jpg'); background-size: cover;">
+    <!-- sección proyectos realizados -->
+
+    <div class="px-10 py-40">
+        
+            <div class="flex flex-col">
+                <h2 class="text-2xl font-light text-gray-600">Proyectos</h2>
+                <p class="text-gray-600 text-4xl">Espacios que </br>hemos construido</p>
             </div>
-            <div class="px-0 md:px-5 py-10 md:py-0">
+            <div class="flex flex-col md:flex-row w-full py-20 md:gap-20">
+                <div class="size-80 md:size-180 md:w-1/2 md:order-2 shrink-0 bg-cover bg-center" style="background-image: url('img/project-villa.jpg'); ">
+                </div>
+                <div class="px-0 md:px-5 py-10 md:py-0 md:w-1/2 md:order-1 flex flex-col">
+                    <p class="uppercase text-xl text-gray-600">Vivienda unifamiliar - 2024</p>
+                    <p class="text-gray-700 font-light text-4xl mt-10">Villa Calma</p>
+                    <p class="text-gray-600">Mallorca, España</p>
+                    <p class="text-gray-600 font-light max-w-2xl">320 m² de hormigón blanco y cristal suspendidos sobre el
+                        <br>mar Mediterráneo, con vistas panorámicas y una piscina infinita que se funde con el horizonte.
+                        <br>Diseñada para maximizar la conexión con el entorno natural, esta villa combina lujo y serenidad en un
+                        <br>entorno idílico, ofreciendo un refugio de tranquilidad y sofisticación
+                    </p>
+
+                    <p class="mt-10 text-xl font-light"><a href="#" class="text-gray-600 hover:text-orange-400">Ver proyecto</a></p>
+                </div>
+            </div>
+        
+        
+
+        <div class="flex flex-col md:flex-row py-20 md:gap-20">
+            <div class="size-80 md:size-180 md:w-1/2 order-1" style="background-image: url('img/project-loft.jpg'); background-size: cover;">
+            </div>
+            <div class="py-10 md:py-0 md:w-1/2 order-2">
                 <p class="uppercase text-xl text-gray-600">Vivienda unifamiliar - 2024</p>
                 <p class="text-gray-700 font-light text-4xl mt-10">Villa Calma</p>
                 <p class="text-gray-600">Mallorca, España</p>
@@ -55,29 +78,10 @@
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row py-20">
-  
-            <div class="px-0 md:px-5 py-10 md:py-0">
-                <p class="uppercase text-xl text-gray-600">Vivienda unifamiliar - 2024</p>
-                <p class="text-gray-700 font-light text-4xl mt-10">Villa Calma</p>
-                <p class="text-gray-600">Mallorca, España</p>
-                <p class="text-gray-600 font-light">320 m² de hormigón blanco y cristal suspendidos sobre el
-                    <br>mar Mediterráneo, con vistas panorámicas y una piscina infinita que se funde con el horizonte.
-                    <br>Diseñada para maximizar la conexión con el entorno natural, esta villa combina lujo y serenidad en un
-                    <br>entorno idílico, ofreciendo un refugio de tranquilidad y sofisticación
-                </p>
-
-                <p class="mt-10 text-xl font-light"><a href="#" class="text-gray-600 hover:text-orange-400">Ver proyecto</a></p>
+        <div class="flex flex-col md:flex-row md:gap-20">
+            <div class="size-80 md:size-180 md:w-1/2 md:order-2" style="background-image: url('img/project-villa.jpg'); background-size: cover;">
             </div>
-
-            <div class="size-100 md:size-200 md:ms-20" style="background-image: url('img/project-loft.jpg'); background-size: cover;">
-            </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row py-20">
-            <div class="size-100 md:size-200" style="background-image: url('img/project-villa.jpg'); background-size: cover;">
-            </div>
-            <div class="px-0 md:px-5 py-10 md:py-0">
+            <div class="px-0 md:px-5 py-10 md:py-0 md:w-1/2 md:order-1">
                 <p class="uppercase text-xl text-gray-600">Vivienda unifamiliar - 2024</p>
                 <p class="text-gray-700 font-light text-4xl mt-10">Villa Calma</p>
                 <p class="text-gray-600">Mallorca, España</p>
@@ -91,8 +95,9 @@
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row py-20">
-  
+        <div class="flex flex-col md:flex-row py-20 md:gap-20">
+            <div class="size-80 md:size-180" style="background-image: url('img/project-loft.jpg'); background-size: cover;">
+            </div>
             <div class="px-0 md:px-5 py-10 md:py-0">
                 <p class="uppercase text-xl text-gray-600">Vivienda unifamiliar - 2024</p>
                 <p class="text-gray-700 font-light text-4xl mt-10">Villa Calma</p>
@@ -106,20 +111,106 @@
                 <p class="mt-10 text-xl font-light"><a href="#" class="text-gray-600 hover:text-orange-400">Ver proyecto</a></p>
             </div>
 
-            <div class="size-100 md:size-200 md:ms-20" style="background-image: url('img/project-loft.jpg'); background-size: cover;">
-            </div>
+            
         </div>
 
     </div>
 
-    <div class="px-20 py-40">
-    <div class="flex flex-col">
+    <div class="px-10 md:px-20 py-40">
+    <div class="flex flex-col mb-15">
             <h2 class="text-2xl font-light text-gray-600">Proceso</h2>
             <p class="text-gray-700 text-5xl">Cinco estancias,</br>un camino</p>
     </div>
+        <div class="flex flex-col md:flex-row space-x-6 py-20 mb-20">
+  
+            <div class="px-0 md:px-10 py-10 flex-1 md:py-0">
+                <p class="uppercase text-8xl text-orange-600">01</p>
+                <p class="text-gray-700 font-light text-4xl mt-5">Diseño del plano</p>
+                <p class="text-gray-600 font-light">Traducimos tu visión en planos detallados,
+                    <br>asegurando que cada espacio se diseñe para maximizar la funcionalidad
+                    <br>y la estética, creando un hogar que refleje tu estilo de vida.
+                </p>
+            </div>
+
+            <div class="size-80 md:size-180 md:ms-20" style="background-image: url('img/process-plano.jpg'); background-size: cover;">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row  py-20 mb-20">
+  
+            <div class="px-0 md:px-10 flex-1 py-10 md:py-0">
+                <p class="uppercase text-8xl text-orange-600">02</p>
+                <p class="text-gray-700 font-light text-4xl mt-5">Diseño de interiores</p>
+                <p class="text-gray-600 font-light">El espacio cobra vida da través de los materiales,
+                    <br>las ataexturas y la escala del mobiliario,
+                    <br>creando ambientes que reflejan tu estilo y personalidad, transformando cada rincón en un refugio de confort y elegancia.
+                </p>
+            </div>
+
+            <div class="size-80 md:size-180 md:ms-20" style="background-image: url('img/process-interiores.jpg'); background-size: cover;">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row py-20 mb-20">
+  
+            <div class="px-0 md:px-10 flex-1 py-10 md:py-0">
+                <p class="uppercase text-8xl text-orange-600">03</p>
+                <p class="text-gray-700 font-light text-4xl mt-5">Presupuesto de obra y materiales</p>
+                <p class="text-gray-600 font-light">Desglosamos cada coste con transparencia,
+                    <br>garantizando que tu inversión se utilice de manera eficiente, permitiéndote tomar decisiones informadas
+                    <br>y asegurando que el proyecto se mantenga dentro del presupuesto sin comprometer la calidad o el diseño.
+                </p>
+            </div>
+
+            <div class="size-80 md:size-180 md:ms-20" style="background-image: url('img/process-materiales.jpg'); background-size: cover;">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row py-20 mb-20">
+  
+            <div class="px-0 md:px-10 flex-1 py-10 md:py-0">
+                <p class="uppercase text-8xl text-orange-600">04</p>
+                <p class="text-gray-700 font-light text-4xl mt-5">Presupuesto de interiores</p>
+                <p class="text-gray-600 font-light">El espacio cobra vida da través de los materiales,
+                    <br>las texturas y la escala del mobiliario,
+                    <br>creando ambientes que reflejan tu estilo y personalidad, transformando cada rincón en un refugio de confort y elegancia.
+                </p>
+            </div>
+
+            <div class="size-80 md:size-180 md:ms-20" style="background-image: url('img/process-obra.jpg'); background-size: cover;">
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row py-20">
+  
+            <div class="px-0 md:px-10 flex-1 py-10 md:py-0">
+                <p class="uppercase text-8xl text-orange-600">05</p>
+                <p class="text-gray-700 font-light text-4xl mt-5">Finalización de la obra</p>
+                <p class="text-gray-600 font-light">Dirigimos cada fase de la construcción hasta
+                    <br>la entrega de llaves. El resultado no es solo un edificio;es el espacio que imaginaste,
+                    <br>construido con precisión y cuidado, listo para convertirse en tu nuevo hogar.
+                </p>
+            </div>
+
+            <div class="size-80 md:size-180 md:ms-20" style="background-image: url('img/process-final.jpg'); background-size: cover;">
+            </div>
+        </div>
     </div>
 
-
-
     </main>
+
+<footer class="border-t text-gray-400 bg-[#efede6]">
+    <div class="flex flex-row px-20">
+        <div class="flex text-align-left flex-col py-20">
+            <p class="text-gray-900 text-2xl">Estudio</p>
+            <p class="text-gray-600">Estudio Arquitectura y Diseño</p>
+            <p class="text-gray-600 mt-5">© 2024 Estudio Arquitectura y Diseño. Todos los derechos reservados.</p>
+        </div>
+        <div class="flex text-align-right ms-auto flex-col text-lg py-20">
+            <p class="text-gray-500">email@estudio.com</p>
+            <p class="text-gray-500">600 111 222</p>
+            <p class="text-gray-500">Sevilla, andalucía</p>
+        </div>
+    </div>
+</footer>
 </body>
