@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body class="m-0 p-0">
+<main class="bg-[#efede6] dark:bg-gray-800 relative w-full h-screen flex flex-col items-center">
+
+<div class="px-2 md:px-10 py-4 md:py-0 w-screen md:w-full md:fixed z-50">
+        <nav class="w-full flex flex-row">
+            <p class="text-lg py-2 md:py-10 flex flex-1">
+            <a href="./index.html" class="text-orange-500 flex items-center">
+            <span class="material-symbols-outlined">
+                arrow_back
+            </span>
+            Volver
+            </a>
+            </p>
+        </nav>   
+    </div>
+
+    <div class="px-2 md:px-0">
+        <div class="py-10 ">
+            <h1 class="uppercase text-2xl">Estudio arquitectura</h1>
+            <h3 class="text-gray-500 text-lg">Cuéntanos sobre tu proyecto. Cada conversación comienza con escuchar.</h3>
+        </div>
+
+        <form action="#" method="post" class="gap-10">
+        
+        <div class="flex flex-col gap-8 mt-10">
+            <label class="uppercase text-gray-500">Nombre completo</label>
+            <input type="text" name="nombre" class="border-b border-gray-600 focus:border-orange-600 focus:outline-none ring-0">
+        </div>
+        <div class="flex flex-col gap-8 mt-10">
+            <label class="uppercase text-gray-500">Email</label>
+            <input type="email" name="email" class="border-b border-gray-600 focus:border-orange-600 focus:outline-none ring-0">
+        </div>
+        <div class="flex flex-col gap-8 mt-10">
+            <label class="uppercase text-gray-500">Teléfono</label>
+            <input type="number" name="telefono" class="border-b border-gray-600 focus:border-orange-600 focus:outline-none ring-0">
+        </div>
+        <div class="flex flex-col gap-8 mt-10">
+            <label class="uppercase text-gray-500">Cuéntanos tu proyecto</label>
+            <textarea name="descrip" rows="4" class="border-b border-gray-600 focus:border-orange-600 focus:outline-none ring-0"></textarea>
+        </div>
+        
+        </form>
+    </div>
+</main>
+<footer class="border-t text-gray-400 bg-[#efede6] py-10">
+    <div class="flex flex-col md:flex-row px-5 md:px-20 m-auto justify-between">
+        <div class="flex text-align-left flex-col">
+            <p class="text-gray-900 text-2xl">Estudio</p>
+            <p class="text-gray-600">Estudio Arquitectura y Diseño</p>
+            <p class="text-gray-600 mt-6">© 2024 Estudio Arquitectura y Diseño. Todos los derechos reservados.</p>
+        </div>
+        <div class="flex text-align-right flex-col gap-3 text-lg mt-6 md:mt-0">
+            <p class="text-gray-500">email@estudio.com</p>
+            <p class="text-gray-500">600 111 222</p>
+            <p class="text-gray-500">Sevilla, andalucía</p>
+        </div>
+    </div>
+</footer> 
+</body>
